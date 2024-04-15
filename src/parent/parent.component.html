@@ -1,0 +1,8 @@
+<fieldset>
+  <legend>Добавление дела</legend>
+  <input [(ngModel)]="val" />
+  <button (click)="addList(val)">Добавить</button>
+  <ol>
+    <li *ngFor="let item of items">{{ item }}</li>
+  </ol>
+</fieldset>
